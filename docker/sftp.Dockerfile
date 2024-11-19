@@ -1,3 +1,3 @@
 FROM atmoz/sftp
 
-COPY ./data /home/shillelagh
+COPY ./docker/data /home/shillelagh
