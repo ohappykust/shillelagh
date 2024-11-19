@@ -16,14 +16,14 @@ services:
       - "5432:5432"
 
   ftp:
-    image: stilliard/pure-ftpd:hardened
+    build:
+      context: ..
+      dockerfile: docker/ftp.Dockerfile
     environment:
       PUBLICHOST: "localhost"
       FTP_USER_NAME: shillelagh
       FTP_USER_PASS: shillelagh123
       FTP_USER_HOME: /home/shillelagh
-    volumes:
-      - ./data:/home/shillelagh
     ports:
       - "2121:21"
       - "30000-30009:30000-30009"
