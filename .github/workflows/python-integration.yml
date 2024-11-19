@@ -8,7 +8,7 @@ name: Python integration tests
 
 on:
   push:
-    branches: [ main ]
+    branches: [ test-intg-tests ]
   pull_request:
     branches: [ main ]
 

@@ -9,7 +9,7 @@ concurrency:
 
 on:
   push:
-    branches: [ main ]
+    branches: [ test-intg-tests ]
   pull_request:
     branches: [ main ]
 
